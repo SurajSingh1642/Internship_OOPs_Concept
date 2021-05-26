@@ -9,13 +9,12 @@ package learning;
  *
  * @author suraj
  */
-public class Square extends Quadrilateral{
-  
-Square(int xy[][]){
-	setcoordinate(xy);
-}
-int area(){
-    int ar=(int)Math.sqrt((xy[0][0]-xy[1][0])*(xy[0][0]-xy[1][0])+(xy[0][1]-xy[1][1])*(xy[0][1]-xy[1][1]));
-    return ar*ar;
-}
+public class Quadrilateral {
+    int xy[][]=new int[4][2]; //4 end points specified
+	void setcoordinate(int xy[][]){
+		for(int i=0;i<4;i++)
+		for(int j=0;j<2;j++)
+		this.xy[i][j]=xy[i][j];
+		}
+    
 }
